@@ -1,0 +1,119 @@
+@media (max-width: 575px) {
+    .container {
+        max-width: 540px;
+        padding: 5px;
+    }
+
+    .header {
+        &__logo {
+            width: 160px;
+        }
+
+        &__official {
+            font-size: 10px;
+            span {
+                font-size: 11px;
+            }
+        }
+
+        &__contacts {
+            a {
+                font-size: 11px;
+                line-height: 25px;
+            }
+        }
+    }
+
+    .button {
+        width: 100px;
+        height: 20px;
+        font-size: 9px;
+        line-height: 20px;
+        margin-top: 5px;
+        &_main {
+            margin-top: 50px;
+            width: 120px;
+            height: 31px;
+            line-height: 15px;
+        }
+    }
+
+    .promo {
+        padding: 20px 0 30px 0;
+        &__wrapper {
+            margin-top: 50px;
+            align-items: center;
+        }
+        &__header {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &__subheader {
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        &__icons {
+            width: 90%;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            promo__icon {
+                margin-top: 14px;
+                img {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &__link {
+            font-size: 14px;
+        }
+
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .header {
+        padding: 0 7px 0 7px;
+        &__logo {
+            width: 200px;
+        }
+
+        &__phone {
+            font-size: 16px;
+        }
+    }
+
+    .promo {
+        min-height: 625px;
+        padding: 21px 0 30px 0;
+    &__wrapper {
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    &__header {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    &__subheader {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    }
+
+    .button_main {
+        width: 250px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 991px) {
+    
+}
