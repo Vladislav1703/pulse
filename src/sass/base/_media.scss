@@ -1,75 +1,16 @@
-@media (max-width: 575px) {
+@media (max-width: 991px) {
     .container {
-        max-width: 540px;
-        padding: 5px;
+        width: 92%;
     }
 
-    .header {
-        &__logo {
-            width: 160px;
+    .advantages {
+        .title {
+            margin-bottom: 0;
         }
-
-        &__official {
-            font-size: 10px;
-            span {
-                font-size: 11px;
-            }
-        }
-
-        &__contacts {
-            a {
-                font-size: 11px;
-                line-height: 25px;
-            }
-        }
-    }
-
-    .button {
-        width: 100px;
-        height: 20px;
-        font-size: 9px;
-        line-height: 20px;
-        margin-top: 5px;
-        &_main {
-            margin-top: 50px;
-            width: 120px;
-            height: 31px;
-            line-height: 15px;
-        }
-    }
-
-    .promo {
-        padding: 20px 0 30px 0;
+        padding: 50px 0;
         &__wrapper {
-            margin-top: 50px;
-            align-items: center;
+            padding-top: 35px;
         }
-        &__header {
-            font-size: 18px;
-            line-height: 18px;
-        }
-        &__subheader {
-            font-size: 14px;
-            line-height: 14px;
-        }
-
-        &__icons {
-            width: 90%;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 30px;
-            promo__icon {
-                margin-top: 14px;
-                img {
-                    margin-bottom: 10px;
-                }
-            }
-        }
-
-        &__link {
-            font-size: 14px;
-        }
-
     }
 }
 
@@ -112,8 +53,124 @@
         width: 250px;
         height: 35px;
     }
+
+    .advantages {
+        padding: 30px 0;
+        &__wrapper {
+            padding-top: 25px;
+        }
+        &__subheader_descr {
+            margin-top: 15px;
+        }
+        &__descr {
+            margin-top: 10px;
+        }
+    }
 }
 
-@media (max-width: 991px) {
-    
+@media (max-width: 575px) {
+    .container {
+        max-width: 540px;
+        padding: 5px;
+    }
+
+    .header {
+        &__logo {
+            width: 160px;
+        }
+
+        &__official {
+            font-size: 10px;
+            span {
+                font-size: 11px;
+            }
+        }
+
+        &__contacts {
+            a {
+                font-size: 10px;
+                line-height: 17px;
+            }
+        }
+    }
+
+    .button {
+        width: 90px;
+        height: 20px;
+        font-size: 8px;
+        line-height: 20px;
+        margin-top: 5px;
+        &_main {
+            margin-top: 50px;
+            width: 120px;
+            height: 31px;
+            line-height: 15px;
+        }
+    }
+
+    .promo {
+        padding: 20px 0 30px 0;
+        &__wrapper {
+            margin-top: 50px;
+            align-items: center;
+        }
+        &__header {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &__subheader {
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+        }
+
+        &__icons {
+            width: 90%;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            promo__icon {
+                margin-top: 14px;
+                img {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &__link {
+            font-size: 14px;
+        }
+
+    }
+
+    .advantages {
+        padding: 15px 0 15px 0;
+
+        .title {
+            font-size: 20px;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 15px;
+        }
+
+        &__subheader_descr {
+            margin-top: 7px;
+            margin-bottom: 0px;
+        }
+
+        &__descr {
+            margin-top: 10px;
+        }
+
+        &__icon:nth-child(2) {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
 }
+
+
+
