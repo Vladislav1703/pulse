@@ -1,0 +1,31 @@
+.feed {
+    padding-bottom: 71px;
+    &__subtitle {
+        font-size: 18;
+        font-weight: 700;
+        margin-top: 62px
+        
+    }
+    &__count {
+        margin-top: 10px;
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    &__descr {
+        margin-top: 19px;
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    &__item {
+        display: flex;
+    }
+
+    &__img {
+        width: 169px;
+        height: 169px;
+        margin: 70px 62px 0 0;
+    }
+}
