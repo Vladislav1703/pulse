@@ -105,6 +105,12 @@
     }
 
     .carousel {
+        &__inner {
+            width: 90vw;
+        }
+        img {
+            width: 65%;
+        }
         padding: 50px 0;
         .prev {
             left: 0;
@@ -256,12 +262,19 @@
     }
     
     .carousel {
-        padding: 40px 0;
-        img {
-            width: 50%;
+        &__inner {
+            width: 90vw;
         }
-        .tns-item {
-            display: none;
+        position: relative;
+        padding: 40px 0;
+        .slick-dots {
+            padding: 0;
+            width: 100%;
+            display: inline-block;
+
+        }
+        img {
+            width: 65%;       
         }
     }
 
@@ -282,6 +295,47 @@
 
         &__content {
             margin-top: 25px;
+        }
+    }
+
+    .feed {
+        &__item {
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        &__text {
+            margin-left: 42px;
+            padding-right: 30px;
+        }
+    }
+
+    .footer {
+        &__info {
+            padding: 20px 29px;
+            width: 90%;
+            height: 110px;
+            
+        }
+        &__addr {
+            margin-bottom: 18px;
+            font-size: 12px;
+            line-height: 12px;
+        }
+        &__phone {
+            margin-bottom: 18px;
+            font-size: 12px;
+            line-height: 5px;
+        }
+
+        &__social-item {
+            width: 20px;
+            height: 20px;
+            img {
+                height: 12px;
+            }
         }
     }
 }

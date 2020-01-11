@@ -1,36 +1,25 @@
- $(document).ready(function(){
-  const slider = tns({
-    container: '.carousel__inner',
-    items: 1,
-    slideBy: 'page',
-    autoplay: false,
-    controls: false,
-    nav: false,
-    responsive: {
-      575: {
-        edgePadding: 20,
-        gutter: 20,
-        items: 1,
-          /* nav: true,
-          navContainer: Node,
-          navAsThumbnails: true,
-          navPosition: 'bottom' */
+$(document).ready(function(){
+  $('.carousel__inner').slick({
+  speed: 300,
+  prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
+  nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
+  responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+        }
       },
-      767: {
-        gutter: 30
+      {
+        breakpoint: 768,
+        settings: {
+          /* centerMode: true,
+          variableWidth: true */
+        }
       },
-      991: {
-        items: 1
-      }
-    }
+    ]
   });
 
-  document.querySelector('.prev').addEventListener('click', function () {
-    slider.goTo('prev');
-  });
-  document.querySelector('.next').addEventListener('click', function () {
-    slider.goTo('next');
-  });
 
   $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
     $(this)
