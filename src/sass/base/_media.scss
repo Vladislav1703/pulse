@@ -345,6 +345,17 @@
             }
         }
     }
+
+    .overlay {
+        .modal {
+            &__close {
+                right: -26px;
+            }
+        }
+        #order {
+            width: 85%;
+        }
+    }
 }
 
 
